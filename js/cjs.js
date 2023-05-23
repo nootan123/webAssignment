@@ -103,7 +103,7 @@ class NavigationBar extends HTMLElement{
       <nav style="background-color: #FE6E09;height: 100px;margin: 0px;padding: 0px;">
 
         <div class="navbar">
-            <h5>Nootan</h5>
+            <h5 style = ''>Nootan</h5>
             <div>
                 <a class="active" href="../pages/index.html"><i ></i> Home</a> 
                 <a href="../pages/education.html"><i ></i> Education</a> 
