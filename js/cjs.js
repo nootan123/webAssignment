@@ -1,11 +1,3 @@
-// const template = document.createElement('template');
-
-// template.innerHTML = `
-//   <h1>Hello, World!</h1>
-//   <p>And all who inhabit it</p>
-// `;
-
-// document.body.appendChild(template.content);
 
 class NavigationBar extends HTMLElement{
     constructor(){
@@ -55,7 +47,7 @@ class NavigationBar extends HTMLElement{
     body {font-family: Arial, Helvetica, sans-serif;}
     
     .navbar {
-      width: 100%;
+      width: 100vw;
       background-color: #FE6E09;
       overflow: auto;
     }
@@ -72,7 +64,14 @@ class NavigationBar extends HTMLElement{
       font-size: 17px;
     }
     .navbar div{
-        margin-left: 25%;
+        margin-left: 2vw;
+    }
+    @media screen and (max-width: 1000px) {
+      .navbar a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
     }
     .navbar h5 {
         float: left;
@@ -101,14 +100,14 @@ class NavigationBar extends HTMLElement{
       }
     }
       </style>
-      <nav style="background-color: #FE6E09;height: 165px;margin: 0px;padding: 0px;">
+      <nav style="background-color: #FE6E09;height: 100px;margin: 0px;padding: 0px;">
 
         <div class="navbar">
             <h5>Nootan</h5>
             <div>
-                <a class="active" href="#"><i ></i> Home</a> 
-                <a href="#"><i ></i> Education</a> 
-                <a href="#"><i ></i> Experience</a> 
+                <a class="active" href="../pages/index.html"><i ></i> Home</a> 
+                <a href="../pages/education.html"><i ></i> Education</a> 
+                <a href="../pages/experience/experience.html"><i ></i> Experience</a> 
                 <a href="#"><i ></i> Hobbies</a>
                 <a href="#"><i ></i> Careers</a>
                 <a href="#"><i ></i> Travel</a>

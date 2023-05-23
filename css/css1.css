@@ -23,7 +23,7 @@ body{
     
     color: #000000;
 }
-li{
+/* li{
     display: inline;
 }
 ul {
@@ -31,7 +31,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+  } */
   
 #navContents{
     position: absolute;
@@ -41,19 +41,19 @@ top: 8.48%;
 bottom: 0px;
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: IBM Plex Sans;}
 
 .navbar {
-  width: 100%;
+  width: 100vw;
   background-color: #FE6E09;
   overflow: auto;
 }
 
 .navbar a {
   float: left;
-  margin-top: 50px;
+  /* margin-top: 50px;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
   margin-inline: 0px;
   padding-inline: 30px;
   color: black;
@@ -96,9 +96,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png');
     
     
-    width: 150px;
+    width:150px;
     height: 150px;
-
+    margin-top: 30px;
+    margin-right: 20px;
     background-size: cover;
 
     background-position: top center;
@@ -108,8 +109,79 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 #homepageContainer{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding-top: 50px;
-    /* width: 700px; */
+    width: 60%;
+    padding-top: 50px; 
+    /* width: 700px; */   
     
 }
+#homeDescription{
+    width: 700px;
+}
+.mediumFont{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+}
+.mediumFont1{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+.mediumFont2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.bodyText{
+    font-size: 18px;
+    font-weight: 500;
+    color: #596579;
+}
+
+/* Education */
+.pageBody{
+    padding-top: 119px;
+padding-left: 8vw;
+}
+.smallFont{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+}
+.smallFontBold{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+}
+.xmLight{
+    font-size: 12px;
+    color: #596579;
+    
+}
+#eduIntro{
+    width: 40%;
+}
+#eduHeader{
+    color: #FE6E09;
+}
+.educationContent{
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+}
+
+/* experience */
+.experienceListContainer{
+    width: 50vw;
+    height: 70vh ;
+}
+
+.technologyContainer{
+    padding-top: 37px;
+}
+ul.a {
+    list-style-type: circle;
+  }
