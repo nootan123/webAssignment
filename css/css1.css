@@ -172,6 +172,28 @@ padding-left: 8vw;
     flex-direction: row;
     gap: 7%;
 }
+.individualEducationContents{
+  float: left;
+  width: 33.33%; /* The width is 20%, by default */
+}
+@media screen and (max-width: 800px) {
+  .individualEducationContents {
+    width: 100%; 
+  }
+  .descriptionContents{
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+    
+  }
+  .descriptionImage{
+    padding-left: 0vw;
+    padding-right: 0vw;
+    padding-left: -10px;
+  }
+  
+
+}
 
 /* experience */
 .experienceListContainer{
@@ -203,6 +225,7 @@ padding-left: 8vw;
     border-radius: 50%;
     background-color: #fff;
     margin: 0 auto;
+    background-image: url('../assets/images/best_wedding_image.png');
   }
   
   .card-title {
@@ -222,4 +245,26 @@ padding-left: 8vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
+  }
+
+  /*project Description*/
+  .descriptionContents{
+    display: flex;
+  
+  }
+  .descriptionText{
+    flex: 1;
+  }
+  .descriptionImage{
+    flex: 1;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .companyDescriptionContents{
+    padding-inline: 20vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .companyDescriptionText{
+    width: 80vw;
   }
