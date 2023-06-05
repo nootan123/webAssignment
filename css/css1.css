@@ -250,6 +250,7 @@ padding-left: 8vw;
   /*project Description*/
   .descriptionContents{
     display: flex;
+    padding-right: 50px;
   
   }
   .descriptionText{
