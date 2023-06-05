@@ -145,6 +145,7 @@ body {font-family: IBM Plex Sans;}
 .pageBody{
     padding-top: 119px;
 padding-left: 8vw;
+padding-right: 8vw;
 }
 .smallFont{
     font-size: 14px;
@@ -268,4 +269,10 @@ padding-left: 8vw;
   }
   .companyDescriptionText{
     width: 80vw;
+  }
+
+  .grid-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
   }
