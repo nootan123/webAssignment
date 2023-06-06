@@ -111,7 +111,7 @@ class NavigationBar extends HTMLElement{
                 <a href="#"><i ></i> Hobbies</a>
                 <a href="../pages/careers/career.html"><i ></i> Careers</a>
                 <a href="../pages/travel/travel.html"><i ></i> Travel</a>
-                <a href="#"><i ></i> Contact Me</a>
+                <a href="../pages/contact/contact_me.html"><i ></i> Contact Me</a>
             </div>
             
 
