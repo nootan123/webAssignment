@@ -121,6 +121,108 @@ class NavigationBar extends HTMLElement{
     `;
   }
 }
+ class CustomFooter extends HTMLElement{
+  constructor(){
+    super();
+  }
+  connectedCallback(){
+    this.innerHTML = `
+    <style>
+    footer{
+      background-color: #FEBC8D;
+      margin-top:40px;
+    }
+    footer div{
+  
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    
+    }
+    footer p{
+      width: 40vw;
+      margin-right: 0;
+      margin-left: 0;
+      
+    }
+    #usefulLinks{
+      display: flex;
+      flex-direction: column;
+      line-height: 0;
+      width: 10vw;
+    }
+    #getInTouch{
+      display: flex;
+      flex-direction: column;
+      line-height: 0;
+      width: 10vw;
+    }
+    #socialMediaIcon{
+      display: flex;
+      flex-direction: row;
+    }
+    #socialMediaIcon img{
+      padding-right: 10px;
+    }
+    </style>
 
 
+
+
+    <footer>
+    <center>
+      <div>
+        <p>
+          Welcome to my portfolio website. I am an experienced Flutter developer with 2 years of experience. I can deliver high quality mobile apps in reasonable price.
+        </p>
+        <div id="usefulLinks">
+          <p class="mediumFont2">Useful Links</p>
+          <a href="../index.html">
+            <p>Home</p>
+          </a>
+          <a href="../education.html">
+            <p>Education</p>
+          </a>
+         <a href="../experience/experience.html">
+            <p>Experience</p>
+         </a>
+         <a href="../careers/career.html">
+          <p>Careers</p>
+         </a>
+         <a href="../travel/travel.html">
+            <p>Travel</p>
+         </a>
+          <a href="../contact/contact_me.html">
+            <p>Contact</p>
+          </a>
+        </div>
+        <div id="getInTouch">
+          <p class="mediumFont2">
+            Get In Touch
+          </p>
+          <div id="socialMediaIcon">
+           <a href="https://www.facebook.com/nootan123/" target="_blank"><img src="../assets/icons/facebook.png" alt="" height="20px" width="20px"></a> 
+            <a href="https://www.google.com/" target="_blank"><img src="../assets/icons/google.png" alt="" height="20px" width="20px"></a>
+            <a href="https://github.com/nootan123" target="_blank"><img src="../assets/icons/github.png" alt="" height="20px" width="20px"></a> 
+           <a href="https://www.linkedin.com/in/nootan-bhattarai-63b413138/" target="_blank"><img src="../assets/icons/linkedIn.png" alt="" height="20px" width="20px"></a> 
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </center>
+  
+  </footer>
+
+
+    `
+  }
+ }
+
+
+customElements.define('custom-footer', CustomFooter);
 customElements.define('header-component', NavigationBar);

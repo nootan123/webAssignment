@@ -7,12 +7,43 @@
     <title>Document</title>
     <script src="../../js/cjs.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="../../css/css1.css">
+
+    <script>
+      function validateForm() {
+    let f = document.forms["myForm"]["firstName"].value;
+    let l = document.forms["myForm"]["lastName"].value;
+   
+    let y = document.forms["myForm"]["email"].value;
+    let z = document.forms["myForm"]["description"].value;
+    let a = y.toLowerCase()
+    .match(
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+        console.log(a);
+    if (f == "" || l == "") {
+    alert("Name cannot be empty");
+    return false;
+    }else if(y == ''){
+    alert("Email cannot be empty ")
+    return false;
+    }
+    else if(a == '' || a == null){
+    alert("enter correct email");
+    return false;
+    }
+    else if(z== ''){
+    alert("Description cannot be empty");
+    return false;
+    }else{
+    alert("Success!!! Form Submitted")
+    }
+    }
+    </script>
 </head>
 <body>
 <header-component></header-component>
-    <div class="">
+    
         <div class="center" id="homepageContainer" style="padding-top: 100px;padding-bottom: 50px;">
-            <div>
+            <form  name="myForm" onsubmit="return validateForm()" method="POST"> 
                 <p class="mediumFont1">
                    Contact Me 
                 </p>
@@ -20,19 +51,19 @@
                     <div class="form-row">
                       <div>
                         <label class="form-label" for="first-name">First Name:</label><br>
-                        <input class="form-field" type="text" id="first-name" name="first-name" style="width: 20vw;">
+                        <input class="form-field" type="text" id="firstName" name="firstName" style="width: 20vw;">
                       </div>
                       
                       <div>
                         <label class="form-label" for="last-name">Last Name:</label>
                         <br>
-                        <input class="form-field" type="text" id="last-name" name="last-name" style="width: 20vw;">
+                        <input class="form-field" type="text" id="lastName" name="lastName" style="width: 20vw;">
                       </div>
                     </div>
                     
                     <div class="form-row">
                       <label class="form-label" for="email">Email:</label>
-                      <input class="form-field" type="email" id="email" name="email">
+                      <input class="form-field" type="text" id="email" name="email">
                     </div>
                     
                     <div class="form-row">
@@ -53,8 +84,12 @@
                       <input type="submit" class="submit-button">
                     </div>
                   </div>
-        </div>
-    </div>
+            </form>
+         </div>
+        
+            
+  
 
 </body>
+
 </html>

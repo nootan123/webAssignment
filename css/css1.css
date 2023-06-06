@@ -60,6 +60,7 @@ body {font-family: IBM Plex Sans;}
   text-decoration: none;
   font-size: 17px;
 }
+
 .navbar div{
     margin-left: 25%;
 }
@@ -338,4 +339,51 @@ padding-right: 8vw;
     align-items:end;
     float: right;
 
+  }
+  a{
+    text-decoration: none;
+  }
+
+  .error {
+    
+    border:2px solid red;
+  }
+
+  /*footer*/
+  footer{
+    background-color: #FEBC8D;
+  }
+  footer div{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  
+  }
+  footer p{
+    width: 40vw;
+    margin-right: 0;
+    margin-left: 0;
+    
+  }
+  #usefulLinks{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    width: 10vw;
+  }
+  #getInTouch{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    width: 10vw;
+  }
+  #socialMediaIcon{
+    display: flex;
+    flex-direction: row;
+  }
+  #socialMediaIcon img{
+    padding-right: 10px;
   }
