@@ -10,7 +10,7 @@
 </head>
 <body>
 <header-component></header-component>
-    <div class="pageBody">
+    <div class="">
         <div class="center" id="homepageContainer" style="padding-top: 100px;padding-bottom: 50px;">
             <div>
                 <p class="mediumFont1">
@@ -18,12 +18,12 @@
                 </p>
                 <div class="form-container">
                     <div class="form-row">
-                      <div class="form-field-wrapper">
+                      <div>
                         <label class="form-label" for="first-name">First Name:</label><br>
                         <input class="form-field" type="text" id="first-name" name="first-name" style="width: 20vw;">
                       </div>
                       
-                      <div class="form-field-wrapper">
+                      <div>
                         <label class="form-label" for="last-name">Last Name:</label>
                         <br>
                         <input class="form-field" type="text" id="last-name" name="last-name" style="width: 20vw;">
@@ -47,7 +47,10 @@
                     
                     <div class="form-row">
                       <label class="form-label" for="description">Description:</label>
-                      <textarea class="form-field" id="description" name="description" rows="10" cols="10"></textarea>
+                      <textarea class="form-field" id="description" name="description"  rows = "10" cols = "50" style="height: auto;"></textarea>
+                    </div>
+                    <div class="button-container">
+                      <input type="submit" class="submit-button">
                     </div>
                   </div>
         </div>
